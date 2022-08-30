@@ -1,10 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const airlinesSlice = createSlice({
-    name: "airlines",
+const passengersSlice = createSlice({
+    name: "passengers",
     initialState: {
         isLoading: false,
-        airlines: [],
+        passengers: [],
         error: ""
     },
     reducers: {
@@ -13,7 +13,7 @@ const airlinesSlice = createSlice({
         },
         fetchAirlinesSuccess(state, action) {
             state.isLoading = false
-            state.airlines = action.payload
+            state.passengers = action.payload
             state.error = ""
         },
         fetchAirlinesError(state, action) {
@@ -24,5 +24,5 @@ const airlinesSlice = createSlice({
     extraReducers: {}
 })
 
-export default airlinesSlice.reducer
-export const { fetchAirlines, fetchAirlinesSuccess, fetchAirlinesError } = airlinesSlice.actions
+export default passengersSlice.reducer
+export const { fetchAirlines, fetchAirlinesSuccess, fetchAirlinesError } = passengersSlice.actions

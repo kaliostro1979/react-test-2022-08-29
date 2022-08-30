@@ -1,6 +1,6 @@
-import {fetchAirlines, fetchAirlinesError, fetchAirlinesSuccess} from "../slicers/airlinesSlice";
+import {fetchAirlines, fetchAirlinesError, fetchAirlinesSuccess} from "../slicers/passengersSlice";
 
-export const fetchAirlinesAction = (page, perPage)=>{
+export const fetchPassengersAction = (page, perPage)=>{
 
     return async (dispatch)=>{
         try {

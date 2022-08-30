@@ -1,11 +1,9 @@
 import React from 'react';
-import AirLines from "../components/airlines/AirLines";
+import Passengers from "../components/airlines/Passengers";
 
 const Home = () => {
     return (
-        <div className={"container"}>
-            <AirLines/>
-        </div>
+        <Passengers/>
     );
 };
 

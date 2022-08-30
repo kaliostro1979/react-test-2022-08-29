@@ -1,10 +1,18 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Logo from "../logo/Logo";
 
 const Header = () => {
     return (
-        <nav>
+        <nav className={"navBar"}>
             <ul>
+                <li>
+                    <Link to={"/"}>
+                        <div className={"logo"}>
+                            <Logo/>
+                        </div>
+                    </Link>
+                </li>
                 <li>
                     <Link to={"/"}>Home</Link>
                 </li>

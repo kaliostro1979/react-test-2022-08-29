@@ -1,10 +1,12 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
-import airlinesSlice from "./slicers/airlinesSlice";
 import passengerSlice from "./slicers/passengerSlice";
+import deletePassengerSlice from "./slicers/deletePassengerSlice";
+import passengersSlice from "./slicers/passengersSlice";
 
 const rootReducer = combineReducers({
-    airlines: airlinesSlice,
-    passenger: passengerSlice
+    passengers: passengersSlice,
+    passenger: passengerSlice,
+    removePassenger: deletePassengerSlice
 })
 
 
