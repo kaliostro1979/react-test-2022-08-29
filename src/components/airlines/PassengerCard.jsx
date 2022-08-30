@@ -9,7 +9,7 @@ const PassengerCard = ({item}) => {
     const airline = item.airline[0]
     const dispatch = useDispatch()
     const {message} = useSelector(state => state.main.removePassenger.responseMessage)
-    const {id} = useSelector(state => state.main.removePassenger.responseMessage)
+
 
     const removePassenger = (e, id) => {
         e.stopPropagation()

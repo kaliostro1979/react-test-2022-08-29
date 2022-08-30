@@ -6,7 +6,9 @@ const Layout = ({children}) => {
     return (
         <div className={"container"}>
             <Header/>
-            {children}
+            <div className={"body"}>
+                {children}
+            </div>
             <Footer/>
         </div>
     );

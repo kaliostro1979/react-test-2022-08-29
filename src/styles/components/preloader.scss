@@ -1,6 +1,6 @@
 .preloader{
   position: fixed;
-  top: 0;
+  top: 105px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 155px);
   background-color: #ffffff;
   z-index: 100;
 }

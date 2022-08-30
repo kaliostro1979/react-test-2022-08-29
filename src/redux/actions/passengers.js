@@ -5,10 +5,10 @@ export const fetchPassengersAction = (page, perPage)=>{
     return async (dispatch)=>{
         try {
             dispatch(fetchAirlines())
-            const airlines = await fetch(`https://api.instantwebtools.net/v1/passenger?size=${perPage}&page=${page}`)
+            const passengers = await fetch(`https://api.instantwebtools.net/v1/passenger?size=${perPage}&page=${page}`)
                 .then(res=>res.json())
                 .then(data => data)
-            dispatch(fetchAirlinesSuccess(airlines))
+            dispatch(fetchAirlinesSuccess(passengers))
         }catch (err){
             dispatch(fetchAirlinesError(err))
         }
